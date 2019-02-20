@@ -1,5 +1,5 @@
 account-new:
-	../build/bin/XDC account new --datadir node$(node) --keystore node$(node)/keystore --password node$(node)/password
+	../build/bin/XDC account new --datadir node$(node) --keystore node$(node)/keystore --password ./password
 
 bootnode-new:
 	../build/bin/bootnode -genkey boot.key
@@ -42,4 +42,11 @@ node-3:
 	--datadir node3/ --mine --rpc --rpcapi admin,db,eth,debug,miner,net,shh,txpool,personal,web3,dpos,posv,XDPoS --rpcaddr 0.0.0.0 --rpccorsdomain "*" \
 	--unlock '0xf8dae8ddb969e50de90c589306418a504f0c299a' --password ./password \
 	--rpcport 8503 --port 30313 --wsport 8603 \
+	--bootnodes 'enode://ca5011e0d456b54fc03023527bbf9506989f77bcc391cf313043934d9264cb7a62a712cd2e1918b15fc70fc22de50a8053b6bc4f6007d1c51ac3cb385cf6e267@127.0.0.1:30310'
+
+node-4:
+	../build/bin/XDC --syncmode "full" \
+	--datadir node4/ --rpc --rpcapi admin,db,eth,debug,miner,net,shh,txpool,personal,web3,dpos,posv,XDPoS --rpcaddr 0.0.0.0 --rpccorsdomain "*" \
+	--unlock '0x139c90249b85befff2a958bde4326de1c92cac1c' --password ./password \
+	--rpcport 8504 --port 30314 --wsport 8604 \
 	--bootnodes 'enode://ca5011e0d456b54fc03023527bbf9506989f77bcc391cf313043934d9264cb7a62a712cd2e1918b15fc70fc22de50a8053b6bc4f6007d1c51ac3cb385cf6e267@127.0.0.1:30310'
