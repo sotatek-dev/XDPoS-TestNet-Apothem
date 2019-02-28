@@ -49,6 +49,6 @@ node-3:
 node-4:
 	../build/bin/XDC --syncmode "full" \
 	--datadir node4/ --rpc --rpcapi admin,db,eth,debug,miner,net,shh,txpool,personal,web3,dpos,posv,XDPoS --rpcaddr 0.0.0.0 --rpccorsdomain "*" \
-	--unlock '0xdc680c8014a72a2c1d07a83e04bb95e7e8a655a234' --password ./password \
+	--unlock '0x139c90249b85befff2a958bde4326de1c92cac1c' --password ./password \
 	--rpcport 8504 --port 30314 --wsport 8604 \
 	--bootnodes 'enode://ca5011e0d456b54fc03023527bbf9506989f77bcc391cf313043934d9264cb7a62a712cd2e1918b15fc70fc22de50a8053b6bc4f6007d1c51ac3cb385cf6e267@127.0.0.1:30310'

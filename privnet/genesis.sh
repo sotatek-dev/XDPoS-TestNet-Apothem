@@ -2,6 +2,8 @@
 
 project_name='my'
 
+rm -rf $HOME/.puppeth/$project_name
+
 DPOS_CUSTOM_GENESIS_FILE=genesis.json
 Bin_NAME=XDC
 PROJECT_DIR="${GOPATH}/src/github.com/XinFinOrg/XDPoS-TestNet-Apothem"
