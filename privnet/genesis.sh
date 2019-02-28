@@ -6,7 +6,7 @@ rm -rf $HOME/.puppeth/$project_name
 
 DPOS_CUSTOM_GENESIS_FILE=genesis.json
 Bin_NAME=XDC
-PROJECT_DIR="${GOPATH}/src/github.com/XinFinOrg/XDPoS-TestNet-Apothem"
+PROJECT_DIR="${GOPATH}/src/github.com/Sotatek-DucPham/XDPoS-TestNet-Apothem"
 numMN=3
 
 ACCOUNTS[1]='d7842239c9ad194500630fffed179cc521f52046'
